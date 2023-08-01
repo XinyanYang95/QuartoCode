@@ -1,8 +1,20 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib import gridspec
+
 def PlotVib(damp_rat, w, q0, q0dot):
 
-  import matplotlib.pyplot as plt
-  import numpy as np
-  from matplotlib import gridspec
+  '''
+  ARGUMENTS: damp_rat, w, q0, q0dot
+
+  damp_rat: damping ratio, in %.
+  w: damped frequency, in rad/sec.
+  q0: initial displacement, in m.
+  q0dot: initial velocity, in m/s.
+
+  RETURN: fig, response, tao
+
+  '''
 
   plt.rcParams["animation.html"] = "jshtml"
   plt.rcParams['figure.dpi'] = 150  
