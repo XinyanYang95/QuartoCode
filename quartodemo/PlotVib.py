@@ -1,4 +1,4 @@
-def plotVib(damp_rat, w, q0, q0dot):
+def PlotVib(damp_rat, w, q0, q0dot):
 
   import matplotlib.pyplot as plt
   import numpy as np
