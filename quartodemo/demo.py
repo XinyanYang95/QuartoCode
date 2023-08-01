@@ -1,3 +1,8 @@
+import matplotlib.animation as animation
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib import gridspec
+
 def new_PLOT(damp_rat, w, q0, q0dot):
 
   plt.rcParams["animation.html"] = "jshtml"
