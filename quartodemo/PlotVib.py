@@ -26,7 +26,7 @@ def PlotVib(damp_rat, w, q0, q0dot):
 
   cycle = 10 #normalized time
   # tao = np.arange(0,cycle + 0.01,0.01) #normalized time
-   tao = np.arange(0,cycle + 0.02,0.02) #normalized time
+  tao = np.arange(0,cycle + 0.02,0.02) #normalized time
 
   plt.xlabel(r'$\tau$')
   plt.ylabel('q(t)')
