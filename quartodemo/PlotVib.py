@@ -17,14 +17,16 @@ def PlotVib(damp_rat, w, q0, q0dot):
   '''
 
   plt.rcParams["animation.html"] = "jshtml"
-  plt.rcParams['figure.dpi'] = 150  
+  plt.rcParams['figure.dpi'] = 100  
+  plt.rcParams['animation.embed_limit'] = 2**128
   plt.ioff()
 
   damp_rat = float(damp_rat/100)
   damped_freq = w*np.sqrt(1-damp_rat**2) #damped frequency, in rad/sec
 
   cycle = 10 #normalized time
-  tao = np.arange(0,cycle + 0.01,0.01) #normalized time
+  # tao = np.arange(0,cycle + 0.01,0.01) #normalized time
+   tao = np.arange(0,cycle + 0.02,0.02) #normalized time
 
   plt.xlabel(r'$\tau$')
   plt.ylabel('q(t)')
@@ -43,7 +45,7 @@ def PlotVib(damp_rat, w, q0, q0dot):
       count += 1
 
   # fig, ax = plt.subplots()
-  fig = plt.figure(figsize=(8, 4))
+  fig = plt.figure(figsize=(6, 4))
   gs = gridspec.GridSpec(1, 1) 
   ax = plt.subplot(gs[0])
 
