@@ -16,12 +16,6 @@ def PlotVib(damp_rat, w, q0, q0dot):
 
   '''
 
-  # plt.rcParams["animation.html"] = "jshtml"
-  plt.rcParams["animation.html"] = "html5"
-  plt.rcParams['figure.dpi'] = 100  
-  plt.rcParams['animation.embed_limit'] = 2**128
-  plt.ioff()
-
   damp_rat = float(damp_rat/100)
   damped_freq = w*np.sqrt(1-damp_rat**2) #damped frequency, in rad/sec
 
