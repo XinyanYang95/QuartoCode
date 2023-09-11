@@ -43,29 +43,25 @@ def PlotVib(damp_rat, w, q0, q0dot):
       lower_boundary[count]=-amplitude * np.exp(-damp_rat*2*np.pi*i/np.sqrt(1-damp_rat**2))
       count += 1
 
-  # fig, ax = plt.subplots()
   fig = plt.figure(figsize=(6, 4))
   gs = gridspec.GridSpec(1, 1) 
   ax = plt.subplot(gs[0])
 
-  # ax.set_ylim(-q0-3, q0+3)
   ax.set_xlim(-0, 10)
-
   ax.set_xlabel(r'$\tau$')
   ax.set_ylabel('q(t)')
 
-  # plt.plot(tao[0:i], Resp[0:i], color='crimson')
   ax.plot(tao, zero_line, linewidth=0.5, color='black')
   ax.plot(tao, lower_boundary, '--', color='black')
   ax.plot(tao, upper_boundary, '--', color='black')
 
   resgraph, = ax.plot([], [], color='crimson')
-  dot, = ax.plot([], [], 'o', color='red')
+  # dot, = ax.plot([], [], 'o', color='red')
 
   def response(i):
       resgraph.set_data(tao[0:i], Resp[0:i])
-      dot.set_data(tao[i], Resp[i])
-
-      return resgraph, dot,
+      # dot.set_data(tao[i], Resp[i])
+      # return resgraph, dot,
+      return resgraph,
 
   return fig, response, tao
