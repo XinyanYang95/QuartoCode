@@ -15,7 +15,8 @@ def PlotVib(damp_rat, w, q0, q0dot):
 
   '''
 
-  plt.rcParams["animation.html"] = "jshtml"
+  # plt.rcParams["animation.html"] = "jshtml"
+  plt.rcParams["animation.html"] = "html5"
   plt.rcParams['figure.dpi'] = 100  
   plt.rcParams['animation.embed_limit'] = 2**128
   plt.ioff()
