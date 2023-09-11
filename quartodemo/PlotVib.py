@@ -3,7 +3,6 @@ import numpy as np
 from matplotlib import gridspec
 
 def PlotVib(damp_rat, w, q0, q0dot):
-
   '''
   ARGUMENTS: damp_rat, w, q0, q0dot
 
