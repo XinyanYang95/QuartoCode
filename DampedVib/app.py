@@ -83,7 +83,6 @@ app_ui = ui.page_fluid(
 #         else:
 #             return fig
 
-
 def server(input, output, session):
     @output
     @render.plot
