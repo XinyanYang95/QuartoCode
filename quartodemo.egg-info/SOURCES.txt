@@ -1,0 +1,9 @@
+README.md
+setup.py
+quartodemo/PlotVib.py
+quartodemo/__init__.py
+quartodemo.egg-info/PKG-INFO
+quartodemo.egg-info/SOURCES.txt
+quartodemo.egg-info/dependency_links.txt
+quartodemo.egg-info/requires.txt
+quartodemo.egg-info/top_level.txt

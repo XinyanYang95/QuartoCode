@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: quartodemo
+Version: 0.1.0
+Summary: Description of your package
+Home-page: https://github.com/XinyanYang95/QuartoCode
+Author: Lus
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# QuartoCode
